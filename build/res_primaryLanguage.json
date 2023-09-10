@@ -1,0 +1,166 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 안녕하세요! 노지민입니다. 저는 Computer Vision분야에 관심이 많으며 현재 3D-Vision을 공부중입니다.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Recycling Classification Service",
+        "startDate": "2022.10~2022.12",
+        "description": "인공지능의 computer vision을 도입하여 자동으로 재활용을 분류해주는 서비스입니다.",
+        "images": [
+          "images/portfolio/recycle/recycle.png",
+          "images/portfolio/recycle/data.png",
+          "images/portfolio/recycle/data2.png",
+          "images/portfolio/recycle/architecture.png",
+          "images/portfolio/recycle/resize.png"
+        ],
+        "url": "./notion/Recycling Classification Service acbf2f16bfbd488387cd9605d183820f.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Pytorch"
+          }
+        ]
+      },
+      {
+        "title": "Danger Detection Service",
+        "startDate": "2022.11~2022.12",
+        "description": "객체 검출 기법을 활용한 현장 작업자 위험 상황 인지 알고리즘 개발 프로제트입니다.",
+        "images": [
+          "images/portfolio/danger/danger.png",
+          "images/portfolio/danger/sample.png",
+          "images/portfolio/danger/annotation.png"
+        ],
+        "url": "./notion/Danger Detection Service 62ed742e47d24c6a8b356fec485efd34.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Pytorch"
+          }
+        ]
+      },
+      {
+        "title": "SOLOv6 (Car Damaged Detection Service)",
+        "startDate": "2022.04~2022.06",
+        "description": "카셰어링 업체의 주요업무중 하나인 차량의 파손 상태 모니터링 업무를 인공지능으로 자동화한 서비스입니다.",
+        "images": [
+          "images/portfolio/solov6/solov6.png",
+          "images/portfolio/solov6/teacher.png",
+          "images/portfolio/solov6/student.png",
+          "images/portfolio/solov6/focal.png",
+          "images/portfolio/solov6/architecture.png"
+        ],
+        "url": "./notion/SOLOv6 c22ffad5a17c4a5791632ecc0f41a3ba.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Pytorch"
+          },
+          {
+            "class": "devicon-googlecloud-plain",
+            "name": "GCP,GFS"
+          }
+        ]
+      },
+      {
+        "title": "Netflix Analysis",
+        "startDate": "2022.03~2022.03",
+        "description": "OTT서비스의 가장 큰 플렛폼인 Netfilx를 통해 문화트렌드를 분석하는 서비스입니다.",
+        "images": [
+          "images/portfolio/netflix/netflix.png",
+          "images/portfolio/netflix/eda1.png",
+          "images/portfolio/netflix/eda2.png",
+          "images/portfolio/netflix/eda3.png",
+          "images/portfolio/netflix/eda4.png",
+          "images/portfolio/netflix/eda5.png"
+        ],
+        "url": "./notion/Analysis Netflix fe172e136a50474487544c99f776fe38.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Pytorch"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "VDS Labs at Sogang Univ",
+        "title": "Internship",
+        "years": "09.2023 ~ ",
+        "mainTech": [
+          "3D Vision"
+        ],
+        "technologies": [
+          ""
+        ]
+      },
+      {
+        "company": "HCI Labs at Kookmin Univ",
+        "title": "Undergraded Student",
+        "years": "08.2022 - 12.2022",
+        "mainTech": [
+          "Object Tracking"
+        ],
+        "technologies": [
+          "Object Detection",
+          "Swin-Transformer",
+          "DINO",
+          "Self-supervised learning"
+        ]
+      },
+      {
+        "company": "MODULabs",
+        "title": "SOCAR Campus 교육생",
+        "years": "12.2021 - 06.2022",
+        "mainTech": [
+          "Arifical Inteligence"
+        ],
+        "technologies": [
+          "Pytorch",
+          "Tensorflow",
+          "Keras",
+          "Deep Learning",
+          "Computer Vision"
+        ]
+      },
+      {
+        "company": "Kookmin University",
+        "title": "B.S. in Software",
+        "years": "03.2017 - 08.2023",
+        "mainTech": [
+          "Computer Science"
+        ],
+        "technologies": [
+          "Python",
+          "JAVA",
+          "C++",
+          "OS",
+          "CS"
+        ]
+      }
+    ]
+  }
