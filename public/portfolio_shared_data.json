@@ -1,0 +1,53 @@
+{
+    "basic_info": {
+      "name": "JIMIN Roh",
+      "titles": [ "3D-Vision", "3D-Reconstruction", "3D-Perception" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/Jiminroh",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "notion",
+          "url": "https://rohjimin.notion.site/JIMIN-ROH-d24625b713a24ac79d7403d7a22ba2fe?pvs=4",
+          "class": "fab fa-readme"
+        }
+      ],
+      "image": "profile.jpeg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "Pytorch",
+          "class": "devicon-pytorch-original",
+          "level": "95"
+        },
+        {
+          "name": "Tenserflow",
+          "class": "devicon-tensorflow-original",
+          "level": "80"
+        },
+        {
+          "name": "OpenCV",
+          "class": "devicon-opencv-plain",
+          "level": "90"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-original",
+          "level": "70"
+        },
+        {
+          "name": "GCP",
+          "class": "devicon-googlecloud-plain",
+          "level": "75"
+        }
+      ]
+    }
+  }
