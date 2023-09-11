@@ -81,8 +81,8 @@ class About extends Component {
                     <br />
                     <br />
 
-                    👋 안녕하세요! 이지원입니다.
-                    저는 현재 Deep Learning을 공부중이며, Computer Vision에 관심이 있습니다.
+                    👋 안녕하세요! 이지원입니다.<br />
+                    &nbsp;{" "}저는 현재 Deep Learning을 공부중이며, Computer Vision에 관심이 있습니다.
                     <br /><br />
                     <b>E-mail: </b>wldnjs981128@gmail.com
                     <br />
