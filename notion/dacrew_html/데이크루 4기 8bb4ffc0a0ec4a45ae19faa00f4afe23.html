@@ -1,0 +1,687 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>데이크루 4기</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8bb4ffc0-a0ec-4a45-ae19-faa00f4afe23" class="page sans"><header><h1 class="page-title">데이크루 4기</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesMultipleSelect"><path d="M1.91602 4.83789C2.44238 4.83789 2.87305 4.40723 2.87305 3.87402C2.87305 3.34766 2.44238 2.91699 1.91602 2.91699C1.38281 2.91699 0.952148 3.34766 0.952148 3.87402C0.952148 4.40723 1.38281 4.83789 1.91602 4.83789ZM5.1084 4.52344H14.3984C14.7607 4.52344 15.0479 4.23633 15.0479 3.87402C15.0479 3.51172 14.7607 3.22461 14.3984 3.22461H5.1084C4.74609 3.22461 4.45898 3.51172 4.45898 3.87402C4.45898 4.23633 4.74609 4.52344 5.1084 4.52344ZM1.91602 9.03516C2.44238 9.03516 2.87305 8.60449 2.87305 8.07129C2.87305 7.54492 2.44238 7.11426 1.91602 7.11426C1.38281 7.11426 0.952148 7.54492 0.952148 8.07129C0.952148 8.60449 1.38281 9.03516 1.91602 9.03516ZM5.1084 8.7207H14.3984C14.7607 8.7207 15.0479 8.43359 15.0479 8.07129C15.0479 7.70898 14.7607 7.42188 14.3984 7.42188H5.1084C4.74609 7.42188 4.45898 7.70898 4.45898 8.07129C4.45898 8.43359 4.74609 8.7207 5.1084 8.7207ZM1.91602 13.2324C2.44238 13.2324 2.87305 12.8018 2.87305 12.2686C2.87305 11.7422 2.44238 11.3115 1.91602 11.3115C1.38281 11.3115 0.952148 11.7422 0.952148 12.2686C0.952148 12.8018 1.38281 13.2324 1.91602 13.2324ZM5.1084 12.918H14.3984C14.7607 12.918 15.0479 12.6309 15.0479 12.2686C15.0479 11.9062 14.7607 11.6191 14.3984 11.6191H5.1084C4.74609 11.6191 4.45898 11.9062 4.45898 12.2686C4.45898 12.6309 4.74609 12.918 5.1084 12.918Z"></path></svg></span>Task</th><td><span class="selected-value select-value-color-orange">Machine Learning</span><span class="selected-value select-value-color-red">Python</span><span class="selected-value select-value-color-gray">Scikitlearn</span></td></tr><tr class="property-row property-row-date"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>기간</th><td><time>@2023년 1월 6일 → 2023년 2월 24일</time></td></tr><tr class="property-row property-row-text"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>소개</th><td>프로젝트 기반의 학습 자료를 만드는 서포터즈 활동입니다.</td></tr></tbody></table></header><div class="page-body"><figure id="3723302b-7641-4c34-9d90-dd85b6cd3dd8" class="image"><a href="%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8F%E1%85%B3%E1%84%85%E1%85%AE%204%E1%84%80%E1%85%B5%208bb4ffc0a0ec4a45ae19faa00f4afe23/Untitled.png"><img style="width:1600px" src="%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8F%E1%85%B3%E1%84%85%E1%85%AE%204%E1%84%80%E1%85%B5%208bb4ffc0a0ec4a45ae19faa00f4afe23/Untitled.png"/></a></figure><p id="35d8bf09-7494-423b-8f1f-8fef1a4892ab" class="">
+</p><h2 id="4f6cc785-6d2d-46c0-80b8-b2e8bf9b02c7" class="block-color-blue_background">활동 소개</h2><ul id="cc3b35e1-bd5f-492a-a5ac-ddb9de8c3062" class="bulleted-list"><li style="list-style-type:disc">데이크루는 데이콘 플랫폼 커뮤니티의 활성화를 위해 양질의 컨텐츠를 제작하는 서포터즈</li></ul><ul id="2b630890-3f2a-47ae-9b4d-7a6078184781" class="bulleted-list"><li style="list-style-type:disc">그동안 데이콘에서 열렸던 대회의 데이터를 활용하여 프로젝트 기반 학습 자료를 제작</li></ul><ul id="e45d4207-86da-41e0-aa31-5bf397db63d2" class="bulleted-list"><li style="list-style-type:disc">총 여섯 스테이지로 이루어진 PBL(Project Based Learning)를 기획하고 활동 기간 동안 각 스테이지의 내용을 코드 공유 게시판에 업로드</li></ul><p id="deeda04d-7624-4f8c-8447-a6ac8b355639" class="">
+</p><h2 id="6cde1a26-8125-4778-9216-5cecc4c0fe9b" class="block-color-blue_background">프로젝트 주제</h2><ul id="e5eff9d7-d10e-498b-9145-7f0c6f2fc819" class="bulleted-list"><li style="list-style-type:disc">월간 데이콘 신용카드 사용자 연체 예측 AI 경진대회</li></ul><ul id="654d5d60-3ce4-4b00-b325-5d31d08e5887" class="bulleted-list"><li style="list-style-type:disc">신용점수를 활용해 신청자의 향후 채무 불이행과 신용카드 대급 연체 가능성을 예측</li></ul><ul id="80656d01-4d79-4e6e-bb7e-11bce2294d56" class="bulleted-list"><li style="list-style-type:disc">신용카드 사용자들의 개인 신상 정보 데이터로 사용자의 신용카드 대금 연체 정도를 예측할 수 있는 인공지능 알고리즘을 개발해 금융업계에 제안할 수 있는 인사이트 발굴이 목표</li></ul><p id="8e9602c2-fc7b-4ed9-863d-27211fb09021" class="">
+</p><h2 id="44e14be4-6597-43bf-8087-175ba5e02c3d" class="block-color-blue_background">데이터 소개</h2><ul id="432808be-b52d-4a33-86c3-fe16fb3bba89" class="bulleted-list"><li style="list-style-type:disc">Train<ul id="11a5a60e-af4b-4aea-bcb5-ba8d51da180a" class="bulleted-list"><li style="list-style-type:circle">신용카드 사용자들의 개인 신상정보</li></ul><ul id="37a79b8d-d9ba-4b20-9986-d39c18351e7a" class="bulleted-list"><li style="list-style-type:circle">credit 열 포함</li></ul><ul id="aec271f3-1681-40cb-baa8-5e6472aa4fc4" class="bulleted-list"><li style="list-style-type:circle">(26457, 20)</li></ul></li></ul><ul id="834243d5-c893-42ef-aa42-8ec9aaba3d56" class="bulleted-list"><li style="list-style-type:disc">Test<ul id="6524e3cb-8b59-4636-843c-e3f5b708ceaf" class="bulleted-list"><li style="list-style-type:circle">신용카드 사용자들의 개인 신상정보</li></ul><ul id="139aea6d-bb37-466a-943e-2bbeb63c0ab7" class="bulleted-list"><li style="list-style-type:circle">credit 열 미포함</li></ul><ul id="1264d4fc-117f-44e0-bf23-0b69dda2a67e" class="bulleted-list"><li style="list-style-type:circle">(10000, 19)</li></ul></li></ul><p id="a3cf319d-7bdf-4561-9c52-7237cc37fbde" class="">
+</p><h2 id="c7f75e97-efdb-4d62-b061-a3b8ff6ed74c" class="block-color-blue_background">스테이지 소개</h2><h3 id="fdd25d86-1fdd-4b55-b526-73138409ffcf" class="block-color-purple_background">Stage 1) 데이터 불러오기</h3><ul id="3ca770c2-b597-4ed5-93c1-ee5bad76e5de" class="bulleted-list"><li style="list-style-type:disc">데이터 불러오기</li></ul><ul id="9bc5a70d-de2b-4f82-b1b3-ed69634b74cf" class="bulleted-list"><li style="list-style-type:disc">데이터 간단히 확인하기</li></ul><ul id="4428b4c5-81dd-49ba-90ba-560f92d4ff47" class="bulleted-list"><li style="list-style-type:disc">데이터 내보내기</li></ul><p id="d47428bc-ee0f-46b3-8f98-2b7b7eb223c7" class="">
+</p><h3 id="e7755548-9798-4154-8d98-ed3fc169f374" class="block-color-purple_background">Stage 2) 데이터 살펴보기</h3><ul id="105b96d3-f808-4d2d-8eec-a5be26d2644d" class="bulleted-list"><li style="list-style-type:disc">데이터 타입 파악하기</li></ul><ul id="c07dd603-5951-4d1c-8000-24857ebe1a2e" class="bulleted-list"><li style="list-style-type:disc">데이터 클렌징<ul id="8d41369b-b64a-4e37-847e-d6217e4067c9" class="bulleted-list"><li style="list-style-type:circle">결측치 처리</li></ul><ul id="55736165-ca04-4843-a131-1056e7f17262" class="bulleted-list"><li style="list-style-type:circle">이상치 처리</li></ul><ul id="e77ae859-8b5a-4067-ad93-d9de159e0ee9" class="bulleted-list"><li style="list-style-type:circle">중복 데이터 처리</li></ul></li></ul><ul id="4fd0e0ac-71dc-4875-a22f-5f66a84c6fee" class="bulleted-list"><li style="list-style-type:disc">데이터 변환<ul id="f58e5538-b4de-44db-9425-eaa9e7bb057d" class="bulleted-list"><li style="list-style-type:circle">레이블 인코딩</li></ul><ul id="bb9506a9-cc49-4056-8db2-c7865b74080a" class="bulleted-list"><li style="list-style-type:circle">원핫 인코딩</li></ul><ul id="4436a5a9-9e3e-4772-bd47-da15edc9192e" class="bulleted-list"><li style="list-style-type:circle">get dummies</li></ul><ul id="84fde815-f146-428e-9177-909d87d7fc59" class="bulleted-list"><li style="list-style-type:circle">데이터 스케일링</li></ul></li></ul><p id="23d5a2ee-7dd5-4866-b89d-fadef7103709" class="">
+</p><h3 id="38bc889f-fb05-4c96-9b98-c6b4d7e0098f" class="block-color-purple_background">Stage 3) 데이터 및 모델링의 이해</h3><ul id="8fb90527-ee61-4314-a760-d30a306bdf76" class="bulleted-list"><li style="list-style-type:disc">데이터 분할 - valitaion set 이해하기<ul id="cc09d131-3b72-422e-945a-b0b477b6ebc5" class="bulleted-list"><li style="list-style-type:circle">hold out</li></ul><ul id="e9f0d7a5-1878-4bfa-bcc3-0de34bc820a9" class="bulleted-list"><li style="list-style-type:circle">cross validation</li></ul></li></ul><ul id="c111f943-7710-4362-84fe-ce1be14a4980" class="bulleted-list"><li style="list-style-type:disc">머신러닝 모델 분류<ul id="cface05f-ed1c-473e-b93a-5c830bd38d5c" class="bulleted-list"><li style="list-style-type:circle">분류 모델<ul id="95c71ab0-e6e5-4607-81a1-8c74fdfcad1f" class="bulleted-list"><li style="list-style-type:square">Decision Tree</li></ul><ul id="840ec895-25e7-4edb-8587-332e89e0b7df" class="bulleted-list"><li style="list-style-type:square">KNN</li></ul></li></ul></li></ul><ul id="f86c6a3c-8f5b-428b-aaec-ba2de36a3d4d" class="bulleted-list"><li style="list-style-type:disc">모델링 기초</li></ul><ul id="1057bcbf-7e8a-4749-9543-be1f9b2ef02c" class="bulleted-list"><li style="list-style-type:disc">예측값의 평가<ul id="b0387ba7-9cd2-4c7a-9863-6eeabb15d9b6" class="bulleted-list"><li style="list-style-type:circle">Confusion Matrix</li></ul><ul id="ffba892b-ecc7-4ff1-b574-d45b41324f2c" class="bulleted-list"><li style="list-style-type:circle">Logloss</li></ul></li></ul><p id="c2112c4b-b95a-44e4-9508-406e68ab7fc8" class="">
+</p><h3 id="6993ed05-e998-4fbd-9283-593ad86a3ebe" class="block-color-purple_background">Stage 4) 기초 EDA 및 모델링의 활용</h3><ul id="7459465a-ecf3-4dc6-a2d4-0e8bc20b7a42" class="bulleted-list"><li style="list-style-type:disc">모델의 종류<ul id="8c1d6446-542a-4727-a6c3-0f8b7306c051" class="bulleted-list"><li style="list-style-type:circle">Linear 모델</li></ul><ul id="b9fc67e2-687d-4ac5-85c4-e2cefe2e10ff" class="bulleted-list"><li style="list-style-type:circle">Tree 모델</li></ul><ul id="6a19436e-c437-41a5-bd8d-0eeaef0f9162" class="bulleted-list"><li style="list-style-type:circle">Boostiong 모델</li></ul></li></ul><ul id="6cfefa2d-aacb-454b-b28d-eea6c3aec30c" class="bulleted-list"><li style="list-style-type:disc">Hyperparameter Tuning<ul id="a311007d-35d9-49a5-9ef6-4ba0cd13fe65" class="bulleted-list"><li style="list-style-type:circle">Hyperparameter 종류</li></ul><ul id="a0c0d191-b456-4538-b873-fa515fb48f3d" class="bulleted-list"><li style="list-style-type:circle">Random Search vs Grid Search</li></ul></li></ul><ul id="73b822d6-7cda-4ec3-a69a-5964e30bcea5" class="bulleted-list"><li style="list-style-type:disc">EDA<ul id="7fe08750-4f4c-4363-ac08-5f3ac9207668" class="bulleted-list"><li style="list-style-type:circle">Pie Chart</li></ul><ul id="d7fa815f-209a-4062-8ccd-fb081740bd96" class="bulleted-list"><li style="list-style-type:circle">Hist</li></ul><ul id="7d50ca8d-d2ba-4d49-ba77-0059ca61ba2b" class="bulleted-list"><li style="list-style-type:circle">Bar Chart</li></ul><ul id="75b3a3e5-3bf2-4cbb-9f2c-5af2d14ebe11" class="bulleted-list"><li style="list-style-type:circle">Box Plot</li></ul><ul id="d01e0e5e-50b2-4743-aa31-adf2dad46ec3" class="bulleted-list"><li style="list-style-type:circle">Heat map</li></ul></li></ul><p id="670d4da1-ed2f-4fde-a727-74b9083ebc3c" class="">
+</p><h3 id="c11e274d-942c-44e2-a82c-29a8cc7c3f82" class="block-color-purple_background">Stage 5) EDA 기반 Feature Engineering</h3><ul id="e99c3483-371a-4145-a6ef-79543affaeb9" class="bulleted-list"><li style="list-style-type:disc">기존의 Feature를 활용해 새로운 Feature 생성</li></ul><p id="e7f2a890-0d82-4ab2-834e-983a79516347" class="">
+</p><h3 id="d8b2c025-f59b-40a8-8eb6-1cad91403761" class="block-color-purple_background">Stage 6) 앙상블 기법과 모델 설명하기</h3><ul id="9f20d464-4677-43de-9d37-a9c018b66bf7" class="bulleted-list"><li style="list-style-type:disc">앙상블<ul id="8c765b58-a478-42ab-baf3-0a4b8a3f636b" class="bulleted-list"><li style="list-style-type:circle">같은 모델 앙상블<ul id="bf632f72-20e4-4a14-a368-c506776a82a0" class="bulleted-list"><li style="list-style-type:square">배깅</li></ul><ul id="b0183646-2305-4aab-ab72-774a157f615e" class="bulleted-list"><li style="list-style-type:square">부스팅</li></ul></li></ul><ul id="f2147d43-a2cf-4f0e-8515-c2c4c457216a" class="bulleted-list"><li style="list-style-type:circle">다른 모델 앙상블<ul id="9629fd14-1814-4943-a3f9-923c642b2173" class="bulleted-list"><li style="list-style-type:square">보팅</li></ul><ul id="40f328fa-02f7-4878-a6a2-266ae391d7a3" class="bulleted-list"><li style="list-style-type:square">스태킹</li></ul></li></ul></li></ul><ul id="13d3029b-c71c-4152-8563-14866ea997cb" class="bulleted-list"><li style="list-style-type:disc">모델 설명하기<ul id="09d21129-e5cc-4050-a96f-c81eb5206132" class="bulleted-list"><li style="list-style-type:circle">Feature Importance</li></ul></li></ul><p id="b66c5e7f-3c50-4d78-9a88-fc29d565bece" class="">
+</p><h2 id="9d465f40-4b51-4c1c-b2ab-4cb5f6cf64e4" class="block-color-blue_background">활동 링크</h2><ul id="ba9bc32a-be17-4a5c-92f4-a3e698007c94" class="bulleted-list"><li style="list-style-type:disc">[Stage1]  <a href="https://dacon.io/competitions/official/236047/codeshare/7493">https://dacon.io/competitions/official/236047/codeshare/7493</a></li></ul><ul id="b0bb1507-acf6-4f00-9911-449273d6dc00" class="bulleted-list"><li style="list-style-type:disc">[Stage2]  <a href="https://dacon.io/competitions/official/236047/codeshare/7626?page=1&amp;dtype=random">https://dacon.io/competitions/official/236047/codeshare/7626?page=1&amp;dtype=random</a></li></ul><ul id="e053ae8e-2dff-430c-987c-b8a627c8688f" class="bulleted-list"><li style="list-style-type:disc">[Stage3]  <a href="https://dacon.io/competitions/official/236047/codeshare/7627?page=1&amp;dtype=random">https://dacon.io/competitions/official/236047/codeshare/7627?page=1&amp;dtype=random</a></li></ul><ul id="fc2d3588-97b7-4071-ad72-5d6fba875bc7" class="bulleted-list"><li style="list-style-type:disc">[Stage4]  <a href="https://dacon.io/competitions/official/236047/codeshare/7628?page=1&amp;dtype=random">https://dacon.io/competitions/official/236047/codeshare/7628?page=1&amp;dtype=random</a></li></ul><ul id="2f6999f9-00c3-424e-a61e-05863ba8aa5c" class="bulleted-list"><li style="list-style-type:disc">[Stage5]  <a href="https://dacon.io/competitions/official/236047/codeshare/7629?page=1&amp;dtype=random">https://dacon.io/competitions/official/236047/codeshare/7629?page=1&amp;dtype=random</a></li></ul><ul id="0ad725a9-e501-44d3-805b-9318a0dfc854" class="bulleted-list"><li style="list-style-type:disc">[Stage6] <a href="https://dacon.io/codeshare/7638">https://dacon.io/codeshare/7638</a></li></ul><p id="082eb263-d82d-46da-9675-4f4ece8c0aed" class="">
+</p></div></article></body></html>

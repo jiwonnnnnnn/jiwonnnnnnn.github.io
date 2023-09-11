@@ -1,20 +1,15 @@
 {
     "basic_info": {
       "name": "Jiwon Lee",
-      "titles": [ "3D-Vision", "3D-Reconstruction", "3D-Perception" ],
+      "titles": [ "Deep Learning", "Computer Vision", "Generative Adversarial Network" ],
       "social": [
         {
-          "name": "github",
-          "url": "https://github.com/Jiminroh",
-          "class": "fab fa-github"
-        },
-        {
           "name": "notion",
-          "url": "https://rohjimin.notion.site/JIMIN-ROH-d24625b713a24ac79d7403d7a22ba2fe?pvs=4",
+          "url": "https://piquant-variraptor-75f.notion.site/6f48844bd10941c6ac7e27cc55d6f955?pvs=4",
           "class": "fab fa-readme"
         }
       ],
-      "image": "profile.jpeg"
+      "image": "face.jpg"
     },
     "skills": {
       "icons": [
@@ -22,6 +17,16 @@
           "name": "Python",
           "class": "devicon-python-plain",
           "level": "95"
+        },
+        {
+          "name": "R",
+          "class": "devicon-r-original",
+          "level": "95"
+        },
+        {
+          "name": "MySQL",
+          "class": "devicon-mysql-plain",
+          "level": "80"
         },
         {
           "name": "Pytorch",
@@ -34,20 +39,13 @@
           "level": "80"
         },
         {
-          "name": "OpenCV",
-          "class": "devicon-opencv-plain",
-          "level": "90"
-        },
-        {
-          "name": "AWS",
-          "class": "devicon-amazonwebservices-original",
-          "level": "70"
-        },
-        {
-          "name": "GCP",
-          "class": "devicon-googlecloud-plain",
-          "level": "75"
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "80"
         }
+
+
+
       ]
     }
   }
