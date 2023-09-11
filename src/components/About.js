@@ -80,13 +80,13 @@ class About extends Component {
                     <span className="wave">{hello} :) </span>
                     <br />
                     <br />
-
-                    - 👋 안녕하세요! 노지민입니다. 저는 Computer Vision분야에 관심이 많으며 현재 3D-Vision을 공부중입니다.<br />
-                    3D Reconstruction 기술로 2D-image를 3D-image로 변환하여 초현실 Metaverse를 만드는 일을 하고싶습니다.
-                    <br /><br />
-                    <b>Profile: </b><a href="https://rohjimin.notion.site/JIMIN-ROH-d24625b713a24ac79d7403d7a22ba2fe?pvs=4">Notion</a>
+                     👋 안녕하세요! 이지원입니다. 
                     <br />
-                    <b>Github: </b><a href="https://github.com/Jiminroh">github.com/Jiminroh</a>
+                    저는 현재 Deep Learning을 공부중이며, Computer Vision에 관심이 있습니다.<br />
+                    
+                    <br />
+                    <b>E-mail: </b>wldnjs981128@gmail.com
+                    <br />
 
                   </div>
                 </div>

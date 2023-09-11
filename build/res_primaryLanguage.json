@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 안녕하세요! 노지민입니다. 저는 Computer Vision분야에 관심이 많으며 현재 3D-Vision을 공부중입니다.",
+      "description": "👋 안녕하세요! 이지원입니다. 저는 Computer Vision분야에 관심이 많으며 .",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,17 +11,37 @@
     },
     "projects": [
       {
+        "title": "FSI Data Challenge",
+        "startDate": "2022.06~2022.09",
+        "description": "금융 데이터 분석을 통해 ESG 경영과 관련된 새로운 insight를 제시",
+        "images": [
+          "images/Fsi/image1.png",
+          "images/Fsi/image1-1.png",
+          "images/Fsi/image2.png",
+          "images/Fsi/image3.png"
+        ],
+        "url": "./notion/FSI_html/FSI DATA CHALLENGE 13a877a5b8b34acb9bdb4416d593d37e.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Scikit-learn"
+          }
+        ]
+      },
+      {
         "title": "Recycling Classification Service",
         "startDate": "2022.10~2022.12",
-        "description": "인공지능의 computer vision을 도입하여 자동으로 재활용을 분류해주는 서비스입니다.",
+        "description": "Computer Vision을 도입하여 재활용 쓰레기를 자동으로 분류해주는 서비스",
         "images": [
-          "images/portfolio/recycle/recycle.png",
-          "images/portfolio/recycle/data.png",
-          "images/portfolio/recycle/data2.png",
-          "images/portfolio/recycle/architecture.png",
-          "images/portfolio/recycle/resize.png"
+          "images/deep/image1.png",
+          "images/deep/image5.png",
+          "images/deep/image3.png"
         ],
-        "url": "./notion/Recycling Classification Service acbf2f16bfbd488387cd9605d183820f.html",
+        "url": "./notion/deep_html/재활용 분류 서비스 4e09b1e1bc234bc0b37b284761aca615.html",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -34,15 +54,13 @@
         ]
       },
       {
-        "title": "Danger Detection Service",
-        "startDate": "2022.11~2022.12",
-        "description": "객체 검출 기법을 활용한 현장 작업자 위험 상황 인지 알고리즘 개발 프로제트입니다.",
+        "title": "Dacrew 4th",
+        "startDate": "2023.01~2023.02",
+        "description": "프로젝트 기반의 학습 자료를 만드는 데이콘 서포터즈 활동",
         "images": [
-          "images/portfolio/danger/danger.png",
-          "images/portfolio/danger/sample.png",
-          "images/portfolio/danger/annotation.png"
+          "images/dacrew/image1.png"
         ],
-        "url": "./notion/Danger Detection Service 62ed742e47d24c6a8b356fec485efd34.html",
+        "url": "./notion/dacrew_html/데이크루 4기 8bb4ffc0a0ec4a45ae19faa00f4afe23.html",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -50,22 +68,20 @@
           },
           {
             "class": "devicon-pytorch-original",
-            "name": "Pytorch"
+            "name": "Scikit-learn"
           }
         ]
       },
       {
-        "title": "SOLOv6 (Car Damaged Detection Service)",
-        "startDate": "2022.04~2022.06",
-        "description": "카셰어링 업체의 주요업무중 하나인 차량의 파손 상태 모니터링 업무를 인공지능으로 자동화한 서비스입니다.",
+        "title": "Pet Anomaly Symptom Detection Service",
+        "startDate": "2023.08~2023.09",
+        "description": "반려동물의 행동 패턴 분석을 기반으로 이상 징후를 탐지하는 서비스",
         "images": [
-          "images/portfolio/solov6/solov6.png",
-          "images/portfolio/solov6/teacher.png",
-          "images/portfolio/solov6/student.png",
-          "images/portfolio/solov6/focal.png",
-          "images/portfolio/solov6/architecture.png"
+          "images/fly/image1.png",
+          "images/fly/image2.png",
+          "images/fly/image3.png"
         ],
-        "url": "./notion/SOLOv6 c22ffad5a17c4a5791632ecc0f41a3ba.html",
+        "url": "./notion/skt_html/반려 동물 이상 징후 탐지 서비스 96602537a5884ee3813b00c89a96c110.html",
         "technologies": [
           {
             "class": "devicon-python-plain",
@@ -76,90 +92,60 @@
             "name": "Pytorch"
           },
           {
-            "class": "devicon-googlecloud-plain",
-            "name": "GCP,GFS"
-          }
-        ]
-      },
-      {
-        "title": "Netflix Analysis",
-        "startDate": "2022.03~2022.03",
-        "description": "OTT서비스의 가장 큰 플렛폼인 Netfilx를 통해 문화트렌드를 분석하는 서비스입니다.",
-        "images": [
-          "images/portfolio/netflix/netflix.png",
-          "images/portfolio/netflix/eda1.png",
-          "images/portfolio/netflix/eda2.png",
-          "images/portfolio/netflix/eda3.png",
-          "images/portfolio/netflix/eda4.png",
-          "images/portfolio/netflix/eda5.png"
-        ],
-        "url": "./notion/Analysis Netflix fe172e136a50474487544c99f776fe38.html",
-        "technologies": [
-          {
-            "class": "devicon-python-plain",
-            "name": "Python"
-          },
-          {
-            "class": "devicon-pytorch-original",
-            "name": "Pytorch"
+            "class": "devicon-azure-plain",
+            "name": "Azure"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "VDS Labs at Sogang Univ",
-        "title": "Internship",
-        "years": "09.2023 ~ ",
+        "company": "SKT Tech Academy",
+        "title": "FLY AI Challenger",
+        "years": "06.2023 - 09.2023",
         "mainTech": [
-          "3D Vision"
+          "Artificial Intelligence",
+          "DevOps",
+          "Cloud Service"
         ],
         "technologies": [
-          ""
+          "Tensorflow",
+          "Pytorch",
+          "Docker",
+          "Azure",
+          "OpenCV",
+          "Reinforce Learning"
         ]
       },
       {
-        "company": "HCI Labs at Kookmin Univ",
-        "title": "Undergraded Student",
-        "years": "08.2022 - 12.2022",
+        "company": "X:AI",
+        "title": "Conference of Artificial Intelligence",
+        "years": "03.2023 - 06.2023",
         "mainTech": [
-          "Object Tracking"
-        ],
-        "technologies": [
-          "Object Detection",
-          "Swin-Transformer",
-          "DINO",
-          "Self-supervised learning"
-        ]
-      },
-      {
-        "company": "MODULabs",
-        "title": "SOCAR Campus 교육생",
-        "years": "12.2021 - 06.2022",
-        "mainTech": [
-          "Arifical Inteligence"
+          "Arificial Intelligence"
         ],
         "technologies": [
           "Pytorch",
-          "Tensorflow",
-          "Keras",
           "Deep Learning",
-          "Computer Vision"
+          "Computer Vision",
+          "Natural Language Processing",
+          "Paper review"
         ]
       },
       {
         "company": "Kookmin University",
-        "title": "B.S. in Software",
-        "years": "03.2017 - 08.2023",
+        "title": "B.S. in AI Big Data & Management",
+        "years": "03.2019 - 08.2023",
         "mainTech": [
-          "Computer Science"
+          "Data Analysis",
+          "Artificial Intelligence"
         ],
         "technologies": [
           "Python",
-          "JAVA",
-          "C++",
-          "OS",
-          "CS"
+          "R",
+          "Machine Learning",
+          "Deep Learning",
+          "SQL"
         ]
       }
     ]
