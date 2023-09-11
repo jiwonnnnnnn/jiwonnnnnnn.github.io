@@ -80,11 +80,13 @@ class About extends Component {
                     <span className="wave">{hello} :) </span>
                     <br />
                     <br />
+
                      👋 안녕하세요! 이지원입니다. 
-                    <br />
-                    저는 현재 Deep Learning을 공부중이며, Computer Vision에 관심이 있습니다.<br />
                     
                     <br />
+                    
+                    저는 현재 Deep Learning을 공부중이며, Computer Vision에 관심이 있습니다.
+                    <br /><br />
                     <b>E-mail: </b>wldnjs981128@gmail.com
                     <br />
 
