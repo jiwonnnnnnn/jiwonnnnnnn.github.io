@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "name": "Jiwon Lee",
-      "titles": [ "Deep Learning", "Computer Vision", "Generative Adversarial Network" ],
+      "titles": [ "Deep Learning", "Computer Vision", "Generative Learning" ], 
       "social": [
         {
           "name": "notion",
@@ -20,7 +20,7 @@
         },
         {
           "name": "R",
-          "class": "devicon-r-original",
+          "class": "devicon-r-plain",
           "level": "95"
         },
         {

@@ -96,6 +96,30 @@
             "name": "Azure"
           }
         ]
+      },
+      {
+        "title": "Deep Fake Detection Competition",
+        "startDate": "2023.11~2023.12",
+        "description": "AI 모델 학습을 통해 실제 영상과 딥페이크 영상을 구별하는 경진대회",
+        "images": [
+          "images/competition/image1.png",
+          "images/competition/image2.png"
+        ],
+        "url": "./notion/competition_html/Deep Fake Detection Competiton 2c198c0018444a87b30328b9ae267b10.html",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-pytorch-original",
+            "name": "Pytorch"
+          },
+          {
+            "class": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+          }
+        ]
       }
     ],
     "experience": [
